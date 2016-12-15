@@ -17,6 +17,7 @@ plot(fish$age[fish$year == "2011"], fish$number.eggs[fish$year == "2011"], col =
 
 hist(f1$number.eggs, col = "Purple3", xlab = "# of eggs", main = "Number of Eggs per Fish", las = 1)
 
-
-
+#Get rid of the zeros
+f2 <- f1[f1$number.eggs > 0, ]
+View(f2)
 #-------- Devon's Section---------
