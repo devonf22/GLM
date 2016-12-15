@@ -20,4 +20,7 @@ hist(f1$number.eggs, col = "Purple3", xlab = "# of eggs", main = "Number of Eggs
 #Get rid of the zeros
 f2 <- f1[f1$number.eggs > 0, ]
 View(f2)
+
+hist(f2$number.eggs, col = "Purple3", xlab = "# of eggs", main = "Number of Eggs per Fish", las = 1)
+
 #-------- Devon's Section---------
