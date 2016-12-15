@@ -1,7 +1,6 @@
 #------ Alicia's Section-------
 # GLM
 wd <- getwd() # get working directory
-setwd("~/Desktop/GitHub/DA.GLM.fish") #Alicia's Directory
 
 fish <- read.csv("data.fish.csv", stringsAsFactors = FALSE) # read data file into object called fish
 View(fish) # view the data 
@@ -14,7 +13,6 @@ head(fish)
 f1 <- fish[fish$year == 2011, ]
 
 # visualize the relationship between fish age and number of eggs 
-plot(fish$age[fish$year == "2011"], fish$number.eggs[fish$year == "2011"], col = "red", xlab = "Age of fish (yrs)", ylab = "# of eggs")
 plot(f1$age, f1$number.eggs, col = "red", xlab = "Age of fish (yrs)", ylab = "# of eggs")
 
 hist(f1$number.eggs, col = "Purple3", xlab = "# of eggs", main = "Number of Eggs per Fish", las = 1)
@@ -29,4 +27,4 @@ plot(f2$age, f2$number.eggs)
 #-------- Devon's LM---------
 
 
-#-------- Devon's Section---------#-------- GLM---------
+#-------- GLM---------
